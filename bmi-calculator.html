@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--Building everything from scratch, the notes will be a documentation of my thoughts.
+        I'll probably add some options to change it from metric units to freedom units. I'll see. My knowledge in the languages is very limited but I'm doing everything from scratch.-->
+        <title>A frustratingly simple BMI calculator</title>
+        <link rel="stylesheet" href="bmi-quote-unquote-styling.css">
+    </head>
+    <body>
+        <!--what the fuck do you mean i'm building a form? actually no you're right.-->
+        <h1>Input your biometrics (EU): </h1>
+        <form id="bmi-form">
+        <div id="age">
+            <label for="age-input">Age:</label>
+            <input type="number" id="age-input" name="age" placeholder="Positive numbers only" required />
+        </div>
+        <!--aghhhh fuck i forgot how to put text in the radio options. i'll just change it into checkbox or something
+        okay WOW i forgot what's the difference between checkbox and radio. lemme just run a test or something.
+        okay so apparently, it's best if i use radio. fuck it, let's use that!
+        it's probably not a good idea to put everything in a <p> tag. let me try something...
+        nah, it looks better if i put everything in the <p> tag. this'll probably come back to bite me in the ass later on after i'm done structuring the website, i doubt it though.
+        why am i creating div classes again? i have no clue!--> 
+        <div id="gender">
+        <p>Gender: 
+            <input type="radio" name="gender" id="male" value="male" required />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female" required />
+            <label for="female">Female</label>
+        </p>
+        </div>
+        <!--my code might be unorganized, at first glance (though this might be my definition of organized) BUUUUUUUUT it works!!-->
+        <!--right, so i'm looking at some website for calculating bmi, i'm looking at it's code by using inspect element. what the fuck is a tbody? tr? td? "What the hell is this?"- Dante, DMC4-->
+        <div id="height">
+                <!--dude holy shit all hail google's inspect element because i would've never remembered that the label element pairs with the id attribute
+                damn i'm really overcomplicating this
+                in my most humble defense, i'm just thinking ahead because i know this'll come to bite me in the ass later with css. let's not even get started on javascript ohhhhhhhhhhh thank biology that i'm still young and hyper self aware--> 
+                <label for="height-input">Height (m):</label>
+                <input type="number" id="height-input" name="height" step="0.1" placeholder="meters only" required />
+            </div>
+            <br>
+            <div id="weight">
+                <label for="weight-input">Weight (kg):</label>
+                <input type="number" id="weight-input" name="weight" step="0.1" placeholder="kg only" required />
+            </div>
+            <br>
+            <div id="button">
+            <button type="submit" id="button">Calculate BMI</button>
+            </div>   
+        </form>
+            <div id="result">Result: </div>   
+        <!--ohhhhhh finally now i get to make this dumbass button
+        fuck i forgot how to make a button
+        NEVERMINDDDDDDDDDDDDDDDDDDD, all hail 10th grade IT textbooks-->
+        <script src="frustratingly-simple-js-code-for-the-bmi-in-question.js"></script>
+    </body>
+    <!--it's so great that i made this entire thing in 1 consistent hour... totally no use of ai at all (seriously)
+    to do: add toggle to change it into freedom units, may or may not do it. -->
+</html>

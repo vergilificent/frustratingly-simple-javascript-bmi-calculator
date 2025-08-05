@@ -1,0 +1,66 @@
+/* how are we doing today? i forgot to the button in a div element. already fixed */
+div {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+/* i REALLY should practice more coding, i completely forgot how to use css properly */
+body {
+    background-color: rgb(30, 201, 135);
+}
+/* is the blue button and teal background a good choice of styling? probably not,
+does it really matter? no. */
+button {
+    background-color: rgb(66, 135, 245);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
+#male, #female {
+    cursor: pointer;
+}
+
+#bmi-form, h1 {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+/* this looks absolutely stunning
+i'm REALLY glad how this turned out. geniunely one of the best buttons i've seen in my entire life */
+#result {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+}
+#result:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: default;
+    color: #000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+/* i am ABSOLUTELY COOKING LIKE THIS FELLA!! i never KNEW i had so much artistic creativity. */
